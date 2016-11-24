@@ -1,0 +1,133 @@
+/*PAGE 1*/
+#instruction{
+    margin-top:10%;
+    width:80%;
+    text-align: center;
+    color:#0FBBC1;
+    font-size:20pt;
+    font-weight:bold;
+}
+
+
+#Skype{
+    width:100%;
+    text-align: center;
+    margin-top:5%;
+}
+
+/*PAGE 2*/
+
+#page2{
+    display:none;    
+}
+
+#script{
+    position : absolute;
+    margin-top:3%;
+    margin-left:3%;
+    width:45%;
+    height:85%;
+    overflow-y: auto;
+    background-color: #DFE1E2;
+}
+
+#formSub{
+    position : absolute;
+    margin-top:25.5%;
+    padding-top: 10px;
+    margin-left:52%;
+    width:45%;
+    text-align:center;
+    background-color:#DFE1E2;
+    border:1px solid #fff;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+.valid{
+    margin-top:2px;
+}
+
+#comment{
+    position :absolute;
+    margin-top:40%;
+    margin-left:30%;
+}
+
+td{
+    cursor:pointer;
+}
+
+.tr{
+    color:#0FBBC1;
+}
+
+.subTxt{
+    width:90%;
+}
+
+#buttons{
+    position:absolute;
+    margin-left: 52%;
+    width:45%;
+    margin-top:22%;
+    text-align:center;
+}
+
+#endDiv1 , #endDiv2{
+    cursor:pointer;
+    color:#D3062F;
+    display : inline-block;
+    cursor:pointer
+}
+#endDiv1:hover , #endDiv2:hover{
+   color:#535151;
+   text-decoration: underline;
+}
+#endDiv1:active , #endDiv2:active{
+   color:#D3062F;
+   text-decoration: underline;
+}
+
+#endDiv1{
+    margin-right:25px;
+}
+#endDiv2{
+    margin-left: 25px;
+}
+
+#instruction2{
+    position:absolute;
+    margin-top:4%;
+    text-align: center;
+    color:#0FBBC1;
+    font-size:20pt;
+    font-weight:bold;
+    width:45%;
+    margin-left: 52%;
+}
+
+@-moz-document url-prefix() {
+    #instruction , #instruction2{
+        font-weight: 500;
+    }
+    #instruction2{
+        margin-top:2%;
+    }
+    #buttons{
+         margin-top:19.5%;
+    }
+    #formSub{
+        margin-top:22%;
+    }
+}
+
+
+@media screen and (min-width: 640px), screen\9 {
+
+}
+
+@media \0screen {
+  
+}

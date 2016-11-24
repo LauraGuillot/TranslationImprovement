@@ -1,0 +1,219 @@
+#picture{
+    position:absolute;
+    margin-left:calc(10% - 56.67px);
+    margin-left:-moz-calc(10% - 56.67px);
+    margin-left:-webkit-calc(10% - 56.67px);
+    margin-top:3%;
+    background-image: url(../images/default.png);
+    background-size : 100%;
+    width:170px;
+    height:170px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius:100%;
+    border-radius: 100%;
+}
+
+#progressBar{
+    position:absolute;
+    margin-left:calc(20% + 56.67px);
+    margin-left:-moz-calc(20% + 56.67px);
+    margin-left:-webkit-calc(20% + 56.67px);
+    margin-top:calc(3% + 85px);
+    margin-top:-moz-calc(3% + 85px);
+    margin-top:-webkit-calc(3% + 85px);
+    height:170px;
+    width:70%
+}
+
+#stepTxt{
+    display:none;
+    text-align:center;
+    width:100%;
+    position:absolute;
+    color: #0FBBC1;
+    font-size:15pt;
+    margin-top:40px;
+}
+
+
+.block{
+    position:absolute;
+    width:30%;
+    margin-top:calc(6% + 170px);
+    margin-top:-moz-calc(6% + 170px);
+    margin-top:-webkit-calc(6% + 170px);
+    background-color: #DFE1E2;
+    border: 2px solid #fff;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-border-radius:20px;   
+    text-align:center;
+    color:#0FBBC1;
+}
+
+#scores{
+    margin-left:2.5%;
+    height:50%;
+
+}
+
+#missions{
+    margin-left:35%;
+    height:39%;
+
+}
+
+#trophies{
+    margin-left:67.5%;
+    height:50%;
+}
+
+.score{
+    -webkit-border-radius: 100%;
+    -moz-border-radius:100%;
+    border-radius: 100%;
+    text-align:center;
+    position:absolute;
+    width:120px;
+    height: 80px;
+    border:2px solid #0fbbc1;
+    color:#535151;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#myCS{
+    margin-top:5%;
+    margin-left:10%;
+}
+
+#myRank{
+    margin-top:5%;
+    margin-left:calc(90% - 120px);
+    margin-left:-moz-calc(90% - 120px);
+    margin-left:-webkit-calc(90% - 120px);
+
+}
+
+#myPoints{
+    margin-top:35%;
+    margin-left: calc(50% - 60px);
+    margin-left: -moz-calc(50% - 60px);
+    margin-left: -webkit-calc(50% - 60px);
+}
+
+
+#myTopic , #mySub{
+    position:absolute;
+    margin-top:36%;  
+}
+#myTopic{
+    margin-left: 55%;
+}
+
+#mySub{
+    margin-left:37%;
+}
+
+.mission{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16pt;
+    margin-top:10px;
+
+}
+
+#h11{
+    font-size: 25pt; 
+    color:#ffc202;
+    font-weight: bold
+}
+
+#h12{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#h13{
+    font-size: 14pt;
+    line-height: 20px;
+    ;
+}
+
+@-moz-document url-prefix() {
+    h1{
+        font-weight: 400;
+    }
+    #myTopic , #mySub{
+        margin-top:37%;
+        font-weight: 400;
+    }
+    .mission{
+
+        font-weight: 200;
+    }
+
+    #h12, #h13,#h11{
+        font-weight: 400;
+        line-height: 20px;
+    }
+    #h11{
+        margin-top:0;
+        padding:0;
+        font-weight: 600;
+    }
+    #h12,#h13{
+        margin-bottom :10px;
+        padding:0;
+
+    }
+
+}
+
+@media screen and (min-width: 640px), screen\9 {
+    #h12, #h13,#h11{
+        line-height: 20px;
+    }
+    #h11{
+        margin-top:0;
+        padding:0;
+    }
+    #h12,#h13{
+        margin-bottom :10px;
+        padding:0;
+    }
+    
+     #myTopic , #mySub{
+        margin-top:38%;  
+    }
+}
+
+@media \0screen {
+    #h12, #h13,#h11{
+        line-height: 20px;
+    }
+    #h11{
+        margin-top:0;
+        padding:0;
+    }
+    #h12,#h13{
+        margin-bottom :10px;
+        padding:0;
+    }
+    
+   #myTopic , #mySub{
+        margin-top:38%;
+    }
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #h12,#h13{
+        margin-bottom :17px;
+    }
+
+    #myTopic , #mySub{
+        margin-top:38%;  
+    }
+}

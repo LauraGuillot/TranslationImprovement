@@ -1,0 +1,105 @@
+#playEnd{
+    position:absolute;
+    margin-top: 3%;
+    width:100%;
+    text-align : center;
+}
+
+#thank{
+    font-size: 40pt;
+    font-weight: bold;
+    color:#ff6f00;
+}
+
+#results{
+    position : absolute;
+    width : 30%;
+    height: 300px;
+    margin-left : 80px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:20px;
+    text-align: center;
+    font-size: 20pt;
+    text-align: center;
+    color:#535351;
+
+}
+
+#earn{
+    position:absolute;
+    margin-top: 50px;
+    font-weight: bold;
+    color:#0FBBC1;
+    width : 200px;
+    height : 170px;
+    background-color: #DFE1E2;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    -webkit-border-radius: 100%;
+    padding-top: 30px;
+    margin-left : 44%;
+}
+
+#missions{
+    padding-top: 25px;
+    float:right;
+    margin-right:70px;
+    width:30%;
+    height:300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:20px;
+    text-align: center;
+    color:#0FBBC1;
+    border : 2px solid #ffc202;
+}
+
+.mission{
+    font-size: 18pt;
+}
+
+#s1{
+    font-size: 25pt;
+}
+
+#s2{
+    font-size: 50pt;
+}
+@-moz-document url-prefix() {
+    h1{
+        font-weight: 400
+    }
+
+    #thank{
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    #s1,#s2{
+        padding:0;
+        margin:0;
+    }
+}
+
+@media screen and (min-width: 640px), screen\9 {
+    #thank{
+        margin-bottom: 50px;
+    }
+
+    #s1,#s2{
+        padding:0;
+        margin:0;
+    }
+}
+
+@media \0screen {
+    #thank{
+        margin-bottom: 50px;
+    }
+
+    #s1,#s2{
+        padding:0;
+        margin:0;
+    }
+}

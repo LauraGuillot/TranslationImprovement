@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="signIn.htm">indexController</prop>
+                <prop key="home.htm">playerController</prop>
+                <prop key="home2.htm">playerAddController</prop>
+                <prop key="home3.htm">decoController</prop>
+                <prop key="home4.htm">topicAddController</prop>
+                <prop key="signIn.htm">signController</prop>
+                <prop key="submit.htm">submitController</prop>
+                <prop key="eval.htm">evalController</prop>
+                <prop key="profile.htm">profileController</prop>
+                <prop key="leaderboard.htm">leaderboardController</prop>
+                <prop key="homeReturn.htm">homeController</prop>
+                <prop key="evalPlay1.htm">evalPlay1Controller</prop>
+                <prop key="evalPlay1End.htm">evalPlay1EndController</prop>
+                <prop key="evalPlay2.htm">evalPlay2Controller</prop>
+                <prop key="myTopics.htm">myTopicController</prop>
+                <prop key="mySubmissions.htm">mySubmissionsController</prop>
+                <prop key="myTopics2.htm">myTopicAddController</prop>
+                <prop key="submitEnd.htm">submitEndController</prop>
+                <prop key="submitPlay.htm">submitPlayController</prop>
+                <prop key="stat1.htm">stat1Controller</prop>
+                <prop key="stat2.htm">stat2Controller</prop>
+                 
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+
+   
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="signIn" />
+   
+    <bean
+        name="playerController"
+        class="org.controller.PlayerController"
+    />
+    
+
+    <bean
+        name="playerAddController"
+        class="org.controller.PlayerAddController"
+    />
+    
+  
+    <bean
+        name="decoController"
+        class="org.controller.DecoController"
+    />
+ 
+    <bean
+        name="submitController"
+        class="org.controller.SubmitController"
+    />
+     
+    <bean
+        name="evalController"
+        class="org.controller.EvalController"
+    />
+
+    <bean
+        name="leaderboardController"
+        class="org.controller.LeaderBoardController"
+    />
+       
+    <bean
+        name="profileController"
+        class="org.controller.ProfileController"
+    />
+    
+    <bean
+        name="homeController"
+        class="org.controller.HomeController"
+    />
+    
+    <bean
+        name="signController"
+        class="org.controller.SignController"
+    />
+    
+    <bean
+        name="evalPlay1Controller"
+        class="org.controller.EvalPlay1Controller"
+    />
+    
+    
+    <bean
+        name="evalPlay2Controller"
+        class="org.controller.EvalPlay2Controller"
+    />
+    
+    <bean
+        name="evalPlay1EndController"
+        class="org.controller.EvalPlay1EndController"
+    />
+    <bean
+        name="topicAddController"
+        class="org.controller.TopicAddController"
+    />
+    <bean
+        name="myTopicController"
+        class="org.controller.MyTopicController"
+    />
+    <bean
+        name="mySubmissionsController"
+        class="org.controller.MySubmissionsController"
+    />
+    <bean
+        name="myTopicAddController"
+        class="org.controller.MyTopicAddController"
+    />
+      
+    <bean
+        name="submitEndController"
+        class="org.controller.SubmitEndController"
+    />
+    <bean
+        name="submitPlayController"
+        class="org.controller.SubmitPlayController"
+    />
+    <bean
+        name="stat1Controller"
+        class="org.controller.Stat1Controller"
+    />
+    <bean
+        name="stat2Controller"
+        class="org.controller.Stat2Controller"
+    />
+ 
+    
+</beans>

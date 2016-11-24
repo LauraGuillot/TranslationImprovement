@@ -1,0 +1,229 @@
+#menu{
+    position:absolute;
+    margin-top:0px;
+    width:100%;
+    background-color: #535151;
+    height:55px
+}
+
+body {
+    background-color: transparent;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI Light", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    height:100%;
+    width:100%;
+    font-weight: ligther;
+}
+
+header {
+    padding: 0;
+    border-bottom: 8px solid #ececec;
+    margin-bottom: 20px;
+    color: #0099FF;
+    margin: 20px auto 40px 30px;
+}
+
+.main{
+    width:100%;
+    position:absolute;
+    margin-top:55px;
+    height:-webkit-calc(100% - 55px);
+    height:-moz-calc(100% - 55px);
+    height:calc(100% - 55px);
+    background-color: #d3d3d3;
+}
+
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+    display: inline-block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-before: 0;
+    margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+}
+
+#tab1{
+    position:absolute;
+    margin-left:5px; 
+
+}
+
+#tab2{
+    position:absolute;
+    margin-left:126px;
+
+}
+#tab3{
+    position:absolute;
+    margin-left:247px;
+
+}
+#tab4{
+    position:absolute;
+    margin-left:368px;
+
+}
+
+.tab{
+    font-size: 17px;
+    background-color: #535151;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    padding: 0.4em;
+    border : none;
+    outline:none;
+    width:120px;
+    height : 55px;
+    cursor:pointer;
+
+}
+
+.tab:hover{
+    color: #d3d3d3;  
+}
+
+.tab:active{
+    color: #535151;
+    background-color: #d3d3d3;
+}
+
+#activeTab{
+    color: #0FBBC1; 
+}
+
+#activeTab:hover{
+    color: #d3d3d3;
+}
+
+#activeTab:active{
+    color: #535151;
+    background-color: #DFE1E2;
+}
+
+#leaderboard{
+    float:right;
+    margin-right:10px;
+    width:75px;
+    background-color: transparent;
+    margin-top:5px;
+    
+}
+
+#info{
+    float:right;
+    padding-left : 10px;
+    padding-right : 10px;
+    margin-right:5px;
+    width:180px;
+    height:55px;
+    background:rgba(15,187,193,0.7);
+    text-align:center;
+    color:#535151;
+    font-size:10pt;
+    font-weight: bold;
+}
+
+#sign{
+    float:right;
+    margin-right:30px;
+    margin-top:0px;
+    width:70px;
+    height:55px;
+}
+
+
+.leaderboard{
+    background-color: transparent;
+    background-image: url(../images/icons/leader.png);
+    background-size : 100%;
+    width:75px;
+    height:55px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.leaderboard:hover{
+    background-image: url(../images/icons/leaderOver.png);
+}
+
+.leaderboard:active{
+    background-image: url(../images/icons/leaderClick.png);
+}
+
+.leaderboardActive{
+    background-color: transparent;
+    background-image: url(../images/icons/leaderA.png);
+    background-size : 100%;
+    width:75px;
+    height:55px;
+    border:none;
+    outline:none;
+}
+
+.leaderboardActive:hover{
+    background-image: url(../images/icons/leaderAOver.png);
+}
+
+.leaderboardActive:active{
+    background-image: url(../images/icons/leaderClick.png);
+}
+
+
+
+.signButton{
+    font-size: 15px;
+    background-color: #535151;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    padding: 0.4em;
+    border : none;
+    outline:none;
+    width:70px;
+    height:55px;
+    cursor:pointer;
+}
+
+.signButton:hover{
+    color: #d3d3d3;  
+}
+
+.signButton:active{
+    color: #535151;
+    background-color: #d3d3d3;
+}
+
+#title{
+    font-size: 40px;
+    font-weight: 400;
+    color :#0FBBC1;
+}
+
+@-moz-document url-prefix() {
+    br{
+        content: "";
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    #info{
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    body{
+        font-weight: 300;
+    }
+
+}
+
+

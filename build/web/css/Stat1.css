@@ -1,0 +1,102 @@
+/*BUTTONS*/
+.back{
+    position:absolute;
+    margin-top:2%;
+    margin-left:20px;
+}
+
+
+.nextPage{
+    float: right;
+    margin-top:38%;
+    margin-right:50px;  
+}
+
+/*BUBBLES*/
+
+.bubble{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius:100%;
+    width:250px;
+    height:250px;
+    position : absolute;
+    text-align: center;
+}
+
+#nbPlayers{
+    margin-left: calc(33.25% - 62.5px);
+    margin-top : 2%;
+    background-color: #FED241;
+    border: 2px solid #DFE1E2;
+}
+
+#nbVotes{
+    margin-left: calc(66.5% - 187.5px);
+    margin-top : 2%;
+    background-color: #FED241;
+    border: 2px solid #DFE1E2;
+}
+
+#nbSub{
+    margin-left: calc(16.5%);
+    margin-top : 20%;
+    background-color: #DFE1E2;
+    border: 2px solid #FED241;
+}
+
+#nbApprovedSentences{
+    margin-left: calc(49.5% - 125px);
+    margin-top : 20%;
+    background-color: #FED241;
+    border: 2px solid #DFE1E2;
+}
+
+#nbInProgressSentences{
+    margin-left: calc(82.5% - 250px);
+    margin-top : 20%;
+    background-color: #DFE1E2;
+    border: 2px solid #FED241;
+}
+
+.h11{
+    margin-bottom: 5px;
+    margin-top : 70px;
+    font-weight: normal;
+    color:#535151;
+}
+
+.h12{
+    color:#343333;
+    font-size: 40pt;
+}
+
+@-moz-document url-prefix() {
+    .h11{
+        padding:0;
+    }
+    .h12{
+        padding:0;
+        margin:0;
+    }
+}
+
+@media screen and (min-width: 640px), screen\9 {
+    .h11{
+        padding:0;
+    }
+    .h12{
+        padding:0;
+        margin:0;
+    }
+}
+
+@media \0screen {
+    .h11{
+        padding:0;
+    }
+    .h12{
+        padding:0;
+        margin:0;
+    }
+}

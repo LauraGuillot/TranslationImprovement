@@ -1,0 +1,77 @@
+.back{
+    position:absolute;
+    margin-top:2%;
+    margin-left:20px;
+}
+
+
+#table{
+    position: absolute;
+    height : 80%;
+    margin-top:7%;
+    overflow-y: auto;
+    margin-left:3%;
+    width : 94%;
+}
+
+td{
+    text-align:left;
+    border:1px solid #305859;
+}
+th{
+    font-size: 11pt;
+    border:1px solid #305859;
+}
+
+.me{
+   background-color: #73DFB2;
+}
+
+tr:hover{
+    background-color: #BBDDDF;
+}
+tfoot {
+    display: table-header-group;
+}
+
+
+
+/*Scrollbar*/
+
+#table::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #d3d3d3;
+}
+
+#table::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #d3d3d3;
+}
+
+#table::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #FED241;
+}
+
+
+select{
+    margin-bottom:5px;
+    min-width:50px;
+    margin-left:2px;
+    margin-right:2px;
+     font-family: "Segoe UI Light", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+     color:#535151;
+     font-weight: 600;
+}
+
+input{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-family: "Segoe UI Light", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+     color:#535151;
+     font-weight: 600;
+}
